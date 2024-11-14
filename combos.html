@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combos de Helados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="content"> 
+            <div class="menu container">
+                <img src="unnamed.png" width="70" alt="Logo">
+                <input type="checkbox" id="menu" />
+                <label for="menu"></label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="combos.html">Combos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Combos de Helados Personalizados</h1>
+                <p>Elige tu helado favorito y combina los sabores, toppings y más. ¡Aquí tienes algunas opciones deliciosas!</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="combos container">
+        <h2>Personaliza tu Combo de Helado</h2>
+        <form id="iceCreamForm">
+            <label for="flavor">Elige el sabor:</label>
+            <select id="flavor" name="flavor">
+                <option value="Vainilla">Vainilla</option>
+                <option value="Fresa">Fresa</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Mango">Mango</option>
+            </select>
+
+            <label for="container">Elige el recipiente:</label>
+            <select id="container" name="container">
+                <option value="Vaso">Vaso</option>
+                <option value="Cono">Cono</option>
+            </select>
+
+            <label for="weight">Elige la cantidad (gramos):</label>
+            <select id="weight" name="weight">
+                <option value="125g">125g</option>
+                <option value="200g">200g</option>
+                <option value="250g">250g</option>
+                <option value="300g">300g</option>
+            </select>
+
+            <button type="button" onclick="generateInvoice()">Generar factura</button>
+        </form>
+
+        <div id="invoice" class="invoice-output"></div>
+    </section>
+
+    <footer class="footer">
+        <img src="hell.png">
+    </footer>
+
+    <script src="helado.js"></script>
+</body>
+</html>
